@@ -33,8 +33,8 @@ Json_LightNovels = json.loads(response.content)
 # Setting the dates for filterig the data
 Time_Now = datetime.datetime.now()
 
-Date_Start_Raw = Time_Now + datetime.timedelta(days=1)
-Date_End_Raw = Time_Now + datetime.timedelta(days=7)
+Date_Start_Raw = Time_Now
+Date_End_Raw = Time_Now + datetime.timedelta(days=6)
 
 Date_Start = Date_Start_Raw.strftime("%Y-%m-%d")
 Date_End = Date_End_Raw.strftime("%Y-%m-%d")
